@@ -5,7 +5,7 @@
 <title>Chatbot</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.5.0/css/flag-icon.min.css" />
 
-<!-- Der Abruf von Google-Fonts darf nur im Kontext "Clara free" aktiviert sein! -->
+<!-- Der Abruf von Google-Fonts darf nur im Kontext "Chati free" aktiviert sein! -->
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&amp;display=swap" rel="stylesheet" />
@@ -49,18 +49,137 @@
   --primary-background-company-color: #fff;
   --modal-background: rgba(0, 0, 0, 0.5);
   --clara-image-url: url("https://www.cream-collection.de/wp-content/uploads/go-x/u/8b4f2525-c964-461b-a6a9-daa9ef61f180/l0,t0,w482,h410/image-240x204.jpg");
-  --theme-value-1: "Wer oder was ist Chati?";
-  --theme-text-1: "Chati kennenlernen";
-  --theme-value-2: "Was muss ich tun, um Chati in meinem Unternehmen einzusetzen?";
-  --theme-text-2: "Chati einsetzen";
-  --theme-value-3: "Wie kann ich Chati auf meine Bedürfnisse anpassen?";
-  --theme-text-3: "Chati konfigurieren";
-  --theme-value-4: "Welchen Nutzen habe ich durch Chati?";
-  --theme-text-4: "Chati Nutzen erfahren";
-  --theme-value-5: "Wie funktioniert Chati? Wie geht Chati mit Datenschutz um? Und welche Sicherheitsfeatures verwendet Chati?";
-  --theme-text-5: "Chati vertrauen";
-  --theme-value-6: "Wer oder was ist cream collection?";
-  --theme-text-6: "Über creamco";
+  
+--theme-value-1-de: "Wer oder was ist Chati?";
+--theme-text-1-de: "Chati kennenlernen";
+--theme-value-2-de: "Was muss ich tun, um Chati in meinem Unternehmen einzusetzen?";
+--theme-text-2-de: "Chati einsetzen";
+--theme-value-3-de: "Wie kann ich Chati auf meine Bedürfnisse anpassen?";
+--theme-text-3-de: "Chati konfigurieren";
+--theme-value-4-de: "Welchen Nutzen habe ich durch Chati?";
+--theme-text-4-de: "Chati Nutzen erfahren";
+--theme-value-5-de: "Wie funktioniert Chati? Wie geht Chati mit Datenschutz um? Und welche Sicherheitsfeatures verwendet Chati?";
+--theme-text-5-de: "Chati vertrauen";
+--theme-value-6-de: "Wer oder was ist cream collection?";
+--theme-text-6-de: "Über creamco";
+
+--theme-value-1-en: "Who or what is Chati?";
+--theme-text-1-en: "Get to know Chati";
+--theme-value-2-en: "What do I need to do to use Chati in my company?";
+--theme-text-2-en: "Use Chati";
+--theme-value-3-en: "How can I customize Chati to my needs?";
+--theme-text-3-en: "Configure Chati";
+--theme-value-4-en: "What benefits do I gain from using Chati?";
+--theme-text-4-en: "Learn about Chati's benefits";
+--theme-value-5-en: "How does Chati work? How does Chati handle data protection? What security features does Chati use?";
+--theme-text-5-en: "Trust Chati";
+--theme-value-6-en: "Who or what is cream collection?";
+--theme-text-6-en: "About creamco";
+
+--theme-value-1-es: "¿Quién o qué es Chati?";
+--theme-text-1-es: "Conocer Chati";
+--theme-value-2-es: "¿Qué necesito hacer para usar Chati en mi empresa?";
+--theme-text-2-es: "Usar Chati";
+--theme-value-3-es: "¿Cómo puedo personalizar Chati según mis necesidades?";
+--theme-text-3-es: "Configurar Chati";
+--theme-value-4-es: "¿Qué beneficios obtengo al usar Chati?";
+--theme-text-4-es: "Conocer los beneficios de Chati";
+--theme-value-5-es: "¿Cómo funciona Chati? ¿Cómo maneja Chati la protección de datos? ¿Qué características de seguridad usa Chati?";
+--theme-text-5-es: "Confiar en Chati";
+--theme-value-6-es: "¿Quién o qué es cream collection?";
+--theme-text-6-es: "Acerca de creamco";
+
+--theme-value-1-tr: "Chati nedir veya kimdir?";
+--theme-text-1-tr: "Chati'yi tanıyın";
+--theme-value-2-tr: "Chati'yi şirketimde kullanmak için ne yapmam gerekiyor?";
+--theme-text-2-tr: "Chati'yi kullanın";
+--theme-value-3-tr: "Chati'yi ihtiyaçlarıma nasıl uyarlayabilirim?";
+--theme-text-3-tr: "Chati'yi yapılandırın";
+--theme-value-4-tr: "Chati'yi kullanarak ne gibi faydalar elde edebilirim?";
+--theme-text-4-tr: "Chati'nin faydalarını öğrenin";
+--theme-value-5-tr: "Chati nasıl çalışır? Chati veri korumasını nasıl ele alır? Hangi güvenlik özelliklerini kullanır?";
+--theme-text-5-tr: "Chati'ye güvenin";
+--theme-value-6-tr: "Cream collection nedir veya kimdir?";
+--theme-text-6-tr: "Creamco hakkında";
+
+--theme-value-1-sa: "ما هو أو من هو شاتي؟";
+--theme-text-1-sa: "تعرف على شاتي";
+--theme-value-2-sa: "ماذا أحتاج لفعله لاستخدام شاتي في شركتي؟";
+--theme-text-2-sa: "استخدام شاتي";
+--theme-value-3-sa: "كيف يمكنني تخصيص شاتي لاحتياجاتي؟";
+--theme-text-3-sa: "تخصيص شاتي";
+--theme-value-4-sa: "ما الفوائد التي أحصل عليها من استخدام شاتي؟";
+--theme-text-4-sa: "تعرف على فوائد شاتي";
+--theme-value-5-sa: "كيف يعمل شاتي؟ كيف يتعامل شاتي مع حماية البيانات؟ وما هي ميزات الأمان التي يستخدمها؟";
+--theme-text-5-sa: "الثقة بشاتي";
+--theme-value-6-sa: "ما هي cream collection؟";
+--theme-text-6-sa: "حول creamco";
+
+--theme-value-1-ru: "Кто или что такое Chati?";
+--theme-text-1-ru: "Познакомьтесь с Chati";
+--theme-value-2-ru: "Что мне нужно сделать, чтобы использовать Chati в моей компании?";
+--theme-text-2-ru: "Использовать Chati";
+--theme-value-3-ru: "Как я могу настроить Chati под свои нужды?";
+--theme-text-3-ru: "Настроить Chati";
+--theme-value-4-ru: "Какие преимущества я получаю от использования Chati?";
+--theme-text-4-ru: "Узнайте о преимуществах Chati";
+--theme-value-5-ru: "Как работает Chati? Как Chati обрабатывает защиту данных? Какие функции безопасности использует?";
+--theme-text-5-ru: "Доверьтесь Chati";
+--theme-value-6-ru: "Кто или что такое cream collection?";
+--theme-text-6-ru: "О creamco";
+
+--theme-value-1-pl: "Kim lub czym jest Chati?";
+--theme-text-1-pl: "Poznaj Chati";
+--theme-value-2-pl: "Co muszę zrobić, aby używać Chati w mojej firmie?";
+--theme-text-2-pl: "Używaj Chati";
+--theme-value-3-pl: "Jak mogę dostosować Chati do swoich potrzeb?";
+--theme-text-3-pl: "Skonfiguruj Chati";
+--theme-value-4-pl: "Jakie korzyści zyskuję, używając Chati?";
+--theme-text-4-pl: "Poznaj korzyści Chati";
+--theme-value-5-pl: "Jak działa Chati? Jak Chati radzi sobie z ochroną danych? Jakie funkcje bezpieczeństwa wykorzystuje?";
+--theme-text-5-pl: "Zaufaj Chati";
+--theme-value-6-pl: "Kim lub czym jest cream collection?";
+--theme-text-6-pl: "O creamco";
+
+--theme-value-1-ro: "Cine sau ce este Chati?";
+--theme-text-1-ro: "Cunoaște Chati";
+--theme-value-2-ro: "Ce trebuie să fac pentru a folosi Chati în compania mea?";
+--theme-text-2-ro: "Folosește Chati";
+--theme-value-3-ro: "Cum pot personaliza Chati pentru nevoile mele?";
+--theme-text-3-ro: "Configurează Chati";
+--theme-value-4-ro: "Ce beneficii obțin utilizând Chati?";
+--theme-text-4-ro: "Află despre beneficiile Chati";
+--theme-value-5-ro: "Cum funcționează Chati? Cum gestionează Chati protecția datelor? Ce caracteristici de securitate folosește?";
+--theme-text-5-ro: "Ai încredere în Chati";
+--theme-value-6-ro: "Cine sau ce este cream collection?";
+--theme-text-6-ro: "Despre creamco";
+
+--theme-value-1-gr: "Τι είναι το Chati;";
+--theme-text-1-gr: "Γνωρίστε το Chati";
+--theme-value-2-gr: "Τι πρέπει να κάνω για να χρησιμοποιήσω το Chati στην εταιρεία μου;";
+--theme-text-2-gr: "Χρησιμοποιήστε το Chati";
+--theme-value-3-gr: "Πώς μπορώ να προσαρμόσω το Chati στις ανάγκες μου;";
+--theme-text-3-gr: "Διαμορφώστε το Chati";
+--theme-value-4-gr: "Τι οφέλη αποκομίζω χρησιμοποιώντας το Chati;";
+--theme-text-4-gr: "Μάθετε για τα οφέλη του Chati";
+--theme-value-5-gr: "Πώς λειτουργεί το Chati; Πώς διαχειρίζεται το Chati την προστασία δεδομένων; Ποιες λειτουργίες ασφαλείας χρησιμοποιεί;";
+--theme-text-5-gr: "Εμπιστευθείτε το Chati";
+--theme-value-6-gr: "Τι είναι το cream collection;";
+--theme-text-6-gr: "Σχετικά με το creamco";
+
+--theme-value-1-it: "Chi o cosa è Chati?";
+--theme-text-1-it: "Conosci Chati";
+--theme-value-2-it: "Cosa devo fare per utilizzare Chati nella mia azienda?";
+--theme-text-2-it: "Usa Chati";
+--theme-value-3-it: "Come posso personalizzare Chati per le mie esigenze?";
+--theme-text-3-it: "Configura Chati";
+--theme-value-4-it: "Quali benefici ottengo utilizzando Chati?";
+--theme-text-4-it: "Scopri i benefici di Chati";
+--theme-value-5-it: "Come funziona Chati? Come gestisce la protezione dei dati? Quali funzioni di sicurezza utilizza?";
+--theme-text-5-it: "Fidati di Chati";
+--theme-value-6-it: "Chi o cosa è cream collection?";
+--theme-text-6-it: "Informazioni su creamco";
+
 ########################*/
 
 /* ########################customer
@@ -99,18 +218,138 @@
   --modal-background: rgba(0, 0, 0, 0.5);
   --clara-image-url: url("https://rosendo99er.github.io/images/3BA32B98-B14A-41F6-9F4D-F2428F1E1E36.jpeg");
   
-  --theme-value-1: "Bitte zeige mir eine aktuelle Forderungsaufstellung an. Beachte die Formatierungsanweisungen.";
-  --theme-text-1: "Forderungsaufstellung";
-  --theme-value-2: "Ich möchte die Rechnung bezahlen. Welche Zahlungsarten kann ich nutzen?";
-  --theme-text-2: "Bezahlung";
-  --theme-value-3: "Bitte zeige mir meine eingegangenen bzw. verbuchten Zahlungen an.";
-  --theme-text-3: "Zahlungseingang";
-  --theme-value-4: "Ich möchte eine Ratenzahlung beantragen.";
-  --theme-text-4: "Ratenzahlung";
-  --theme-value-5: "Ich bin mit der Rechnung nicht einverstanden. Wie kann ich einen Widerspruch einreichen?";
-  --theme-text-5: "Widerspruch";
-  --theme-value-6: "Wer oder was ist die ADELTA.FINANZ AG?";
-  --theme-text-6: "Über ADELTA.FINANZ";
+--theme-value-1-de: "Bitte zeige mir eine aktuelle Forderungsaufstellung an. Beachte die Formatierungsanweisungen.";
+--theme-text-1-de: "Forderungsaufstellung";
+--theme-value-2-de: "Ich möchte die Rechnung bezahlen. Welche Zahlungsarten kann ich nutzen?";
+--theme-text-2-de: "Bezahlung";
+--theme-value-3-de: "Bitte zeige mir meine eingegangenen bzw. verbuchten Zahlungen an.";
+--theme-text-3-de: "Zahlungseingang";
+--theme-value-4-de: "Ich möchte eine Ratenzahlung beantragen.";
+--theme-text-4-de: "Ratenzahlung";
+--theme-value-5-de: "Ich bin mit der Rechnung nicht einverstanden. Wie kann ich einen Widerspruch einreichen?";
+--theme-text-5-de: "Widerspruch";
+--theme-value-6-de: "Wer oder was ist die ADELTA.FINANZ AG?";
+--theme-text-6-de: "Über ADELTA.FINANZ";
+  
+--theme-value-1-en: "Please show me a current statement of claims. Observe the formatting instructions.";
+--theme-text-1-en: "Statement of claims";
+--theme-value-2-en: "I want to pay the invoice. What payment methods can I use?";
+--theme-text-2-en: "Payment";
+--theme-value-3-en: "Please show me my received or booked payments.";
+--theme-text-3-en: "Payment receipt";
+--theme-value-4-en: "I would like to request an installment payment.";
+--theme-text-4-en: "Installment payment";
+--theme-value-5-en: "I disagree with the invoice. How can I file an objection?";
+--theme-text-5-en: "Objection";
+--theme-value-6-en: "Who or what is ADELTA.FINANZ AG?";
+--theme-text-6-en: "About ADELTA.FINANZ";
+
+--theme-value-1-es: "Por favor, muéstrame un estado de cuenta actual. Observa las instrucciones de formato.";
+--theme-text-1-es: "Estado de cuenta";
+--theme-value-2-es: "Quiero pagar la factura. ¿Qué métodos de pago puedo usar?";
+--theme-text-2-es: "Pago";
+--theme-value-3-es: "Por favor, muéstrame mis pagos recibidos o registrados.";
+--theme-text-3-es: "Recibo de pago";
+--theme-value-4-es: "Me gustaría solicitar un pago a plazos.";
+--theme-text-4-es: "Pago a plazos";
+--theme-value-5-es: "No estoy de acuerdo con la factura. ¿Cómo puedo presentar una objeción?";
+--theme-text-5-es: "Objeción";
+--theme-value-6-es: "¿Quién o qué es ADELTA.FINANZ AG?";
+--theme-text-6-es: "Acerca de ADELTA.FINANZ";
+
+--theme-value-1-tr: "Lütfen güncel bir alacak tablosunu gösterin. Formatlama talimatlarına uyun.";
+--theme-text-1-tr: "Alacak tablosu";
+--theme-value-2-tr: "Faturayı ödemek istiyorum. Hangi ödeme yöntemlerini kullanabilirim?";
+--theme-text-2-tr: "Ödeme";
+--theme-value-3-tr: "Lütfen alınan veya kaydedilen ödemelerimi gösterin.";
+--theme-text-3-tr: "Ödeme makbuzu";
+--theme-value-4-tr: "Taksitli ödeme talep etmek istiyorum.";
+--theme-text-4-tr: "Taksitli ödeme";
+--theme-value-5-tr: "Faturayı kabul etmiyorum. İtirazı nasıl yapabilirim?";
+--theme-text-5-tr: "İtiraz";
+--theme-value-6-tr: "ADELTA.FINANZ AG nedir veya kimdir?";
+--theme-text-6-tr: "ADELTA.FINANZ hakkında";
+
+--theme-value-1-sa: "يرجى عرض كشف المطالبات الحالي. اتبع تعليمات التنسيق.";
+--theme-text-1-sa: "كشف المطالبات";
+--theme-value-2-sa: "أريد دفع الفاتورة. ما هي طرق الدفع التي يمكنني استخدامها؟";
+--theme-text-2-sa: "الدفع";
+--theme-value-3-sa: "يرجى عرض مدفوعاتي المستلمة أو المسجلة.";
+--theme-text-3-sa: "إيصال الدفع";
+--theme-value-4-sa: "أود طلب دفع على أقساط.";
+--theme-text-4-sa: "دفع على أقساط";
+--theme-value-5-sa: "لا أوافق على الفاتورة. كيف يمكنني تقديم اعتراض؟";
+--theme-text-5-sa: "الاعتراض";
+--theme-value-6-sa: "من هي ADELTA.FINANZ AG؟";
+--theme-text-6-sa: "حول ADELTA.FINANZ";
+
+--theme-value-1-ru: "Пожалуйста, покажите мне текущую выписку по претензиям. Соблюдайте инструкции по форматированию.";
+--theme-text-1-ru: "Выписка по претензиям";
+--theme-value-2-ru: "Я хочу оплатить счет. Какие способы оплаты я могу использовать?";
+--theme-text-2-ru: "Оплата";
+--theme-value-3-ru: "Пожалуйста, покажите мне мои полученные или зарегистрированные платежи.";
+--theme-text-3-ru: "Квитанция об оплате";
+--theme-value-4-ru: "Я хотел бы запросить оплату в рассрочку.";
+--theme-text-4-ru: "Оплата в рассрочку";
+--theme-value-5-ru: "Я не согласен с счетом. Как я могу подать возражение?";
+--theme-text-5-ru: "Возражение";
+--theme-value-6-ru: "Кто или что такое ADELTA.FINANZ AG?";
+--theme-text-6-ru: "Об ADELTA.FINANZ";
+
+--theme-value-1-pl: "Proszę pokaż mi aktualne zestawienie należności. Przestrzegaj instrukcji formatowania.";
+--theme-text-1-pl: "Zestawienie należności";
+--theme-value-2-pl: "Chcę zapłacić fakturę. Jakie metody płatności mogę wykorzystać?";
+--theme-text-2-pl: "Płatność";
+--theme-value-3-pl: "Proszę pokaż mi moje otrzymane lub zaksięgowane płatności.";
+--theme-text-3-pl: "Potwierdzenie płatności";
+--theme-value-4-pl: "Chciałbym wystąpić o płatność ratalną.";
+--theme-text-4-pl: "Płatność ratalna";
+--theme-value-5-pl: "Nie zgadzam się z fakturą. Jak mogę złożyć sprzeciw?";
+--theme-text-5-pl: "Sprzeciw";
+--theme-value-6-pl: "Kim lub czym jest ADELTA.FINANZ AG?";
+--theme-text-6-pl: "O ADELTA.FINANZ";
+
+--theme-value-1-ro: "Te rog să-mi arăți o situație actuală a creanțelor. Respectă instrucțiunile de formatare.";
+--theme-text-1-ro: "Situația creanțelor";
+--theme-value-2-ro: "Vreau să plătesc factura. Ce metode de plată pot folosi?";
+--theme-text-2-ro: "Plată";
+--theme-value-3-ro: "Te rog să-mi arăți plățile primite sau înregistrate.";
+--theme-text-3-ro: "Chitanța de plată";
+--theme-value-4-ro: "Aș dori să solicit o plată în rate.";
+--theme-text-4-ro: "Plată în rate";
+--theme-value-5-ro: "Nu sunt de acord cu factura. Cum pot depune o contestație?";
+--theme-text-5-ro: "Contestație";
+--theme-value-6-ro: "Cine sau ce este ADELTA.FINANZ AG?";
+--theme-text-6-ro: "Despre ADELTA.FINANZ";
+
+--theme-value-1-gr: "Παρακαλώ δείξε μου μια τρέχουσα κατάσταση απαιτήσεων. Τήρησε τις οδηγίες μορφοποίησης.";
+--theme-text-1-gr: "Κατάσταση απαιτήσεων";
+--theme-value-2-gr: "Θέλω να πληρώσω τον λογαριασμό. Ποιες μεθόδους πληρωμής μπορώ να χρησιμοποιήσω;";
+--theme-text-2-gr: "Πληρωμή";
+--theme-value-3-gr: "Παρακαλώ δείξε μου τις ληφθείσες ή καταγεγραμμένες πληρωμές μου.";
+--theme-text-3-gr: "Απόδειξη πληρωμής";
+--theme-value-4-gr: "Θα ήθελα να ζητήσω πληρωμή με δόσεις.";
+--theme-text-4-gr: "Πληρωμή με δόσεις";
+--theme-value-5-gr: "Διαφωνώ με τον λογαριασμό. Πώς μπορώ να υποβάλω ένσταση;";
+--theme-text-5-gr: "Ένσταση";
+--theme-value-6-gr: "Τι είναι η ADELTA.FINANZ AG;";
+--theme-text-6-gr: "Σχετικά με την ADELTA.FINANZ";
+
+--theme-value-1-it: "Per favore, mostrami un resoconto attuale delle richieste. Segui le istruzioni di formattazione.";
+--theme-text-1-it: "Resoconto delle richieste";
+--theme-value-2-it: "Voglio pagare la fattura. Quali metodi di pagamento posso utilizzare?";
+--theme-text-2-it: "Pagamento";
+--theme-value-3-it: "Per favore, mostrami i miei pagamenti ricevuti o registrati.";
+--theme-text-3-it: "Ricevuta di pagamento";
+--theme-value-4-it: "Vorrei richiedere un pagamento a rate.";
+--theme-text-4-it: "Pagamento a rate";
+--theme-value-5-it: "Non sono d'accordo con la fattura. Come posso presentare un'obiezione?";
+--theme-text-5-it: "Obiezione";
+--theme-value-6-it: "Chi o cosa è ADELTA.FINANZ AG?";
+--theme-text-6-it: "Informazioni su ADELTA.FINANZ";
+
+  
+  
   ########################*/
   
 
@@ -329,7 +568,7 @@
 }
 
 
-/* ++++++++++++++++++++++++ Anwendung Clara free ++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++ Anwendung Chati free ++++++++++++++++++++++++ */
 
 :root {
 --rules-context: ChatbotIntern; 
@@ -700,15 +939,14 @@ html, body {
 
 
 
-
- /* ++++++++++++++++++++++++ ENDE Anwendung Clara free ++++++++++++++++++++++++ */
-
+ /*++++++++++++++++++++++++ ENDE Anwendung Chati free ++++++++++++++++++++++++ */
 
 
 
 
 
-/* ++++++++++++++++++++++++ Anwendung Clara ++++++++++++++++++++++++ 
+
+/* ++++++++++++++++++++++++ Anwendung Chati ++++++++++++++++++++++++ 
 
 :root {
 --rules-context: ChatbotConsumer; 
@@ -824,7 +1062,7 @@ html, body {
 
 
 
-  ++++++++++++++++++++++++ ENDE Anwendung Clara ++++++++++++++++++++++++ */
+  ++++++++++++++++++++++++ ENDE Anwendung Chati ++++++++++++++++++++++++ */
 
 
 
@@ -1631,7 +1869,7 @@ padding-left: 0px;
 
 
 
-  ++++++++++++++++++++++++ ENDE Anwendung Chatbot mit Kontaktformular ++++++++++++++++++++++++ */
+ ++++++++++++++++++++++++ ENDE Anwendung Chatbot mit Kontaktformular ++++++++++++++++++++++++ */
 
 
 /* ++++++++++++++++++++++++ Anwendung Chatbot für Factoring ++++++++++++++++++++++++ 
@@ -2795,14 +3033,14 @@ padding-left: 0px;
 
     /* Dropdown-Styling für #language-dropdown */
     #language-dropdown {
-      width: 100%; /* Nimmt die volle Breite der jeweiligen Container ein */
-      padding: 5px; /* Optionales Padding für bessere Lesbarkeit */
-      box-sizing: border-box; /* Bezieht Padding in die Gesamtbreite ein */
+      width: 100%;
+      padding: 5px;
+      box-sizing: border-box;
       font-family: var(--company-font-family);
       font-size: var(--font-size-text);
       color: var(--primary-font-color);
       border: none;
-      background-color: var(--primary-background-color); /* Setzt die Hintergrundfarbe */
+      background-color: var(--primary-background-color);
       margin-left: 20px;
     }
 
@@ -2818,7 +3056,7 @@ padding-left: 0px;
 
     
     #theme {
-      width: auto;
+      max-width: 100%;
       padding: 5px 15px 5px 10px;
       box-sizing: border-box;
       font-family: var(--company-font-family);
@@ -4244,11 +4482,12 @@ textarea:-webkit-autofill {
 
 
 .suggested-link {
+    display: inline-block;
     font-family: var(--company-font-family);
     font-size: var(--font-size-button);
     text-decoration: none;
     padding: 5px 10px;
-    border: none;
+    border: 1px solid var(--primary-background-color);
     border-radius: var(--primary-border-radius);
     background-color: var(--primary-button-color);
     color: var(--tertiary-font-color);
@@ -4908,7 +5147,7 @@ textarea:-webkit-autofill {
 
     </div>
 
-    <div id="clara-image" alt="Clara Bild">
+    <div id="clara-image" alt="Chati Bild">
     </div>    
 
 
@@ -5706,7 +5945,7 @@ function saveBotMessage(botMessage) {
     conversationHistory.push({ role: 'assistant', content: botMessage });
 
     // ChatbotHistory aktualisieren mit HTML <br> Tags für Absätze
-    const formattedBotMessage = "\n\nAntwort von Clara:\n\n" + botMessage;
+    const formattedBotMessage = "\n\nAntwort von Chati:\n\n" + botMessage;
     chatbotHistory.push({ role: 'assistant', content: formattedBotMessage });
 }
 
@@ -5875,18 +6114,19 @@ async function sendMessage() {
 	console.log('Nach processIncomingData');
         console.log("Finale Antwort empfangen.");
 
-        //auch im anderen Chatbot löschen
-        //saveMessage('user', message); // Speichern der Benutzernachricht im Verlauf
+        
+
+  // Status zurücksetzen
+  isWaitingForResponse = false;
 
 
 
-        // Status zurücksetzen
-        isWaitingForResponse = false;
+  // Loader verstecken
+  loaderElement.style.display = 'none';
+  document.getElementById('loader-container').style.display = 'none';
+  document.getElementById('loader-text').style.display = 'none';
 
-        // Loader verstecken
-          loaderElement.style.display = 'none';
-          document.getElementById('loader-container').style.display = 'none';
-          document.getElementById('loader-text').style.display = 'none';
+
 
     } catch (error) {
         console.error("Request failed:", error);
@@ -5946,6 +6186,17 @@ async function processIncomingData(response) {
 
 
 }
+
+
+function deleteLink() {
+  const lastBotMessage = document.querySelectorAll('.bot-message:last-child .suggested-link');
+    lastBotMessage.forEach(link => {
+      const label = link.textContent;
+      link.replaceWith(document.createTextNode(label));
+    });
+  }
+
+
 
 
 
@@ -7592,6 +7843,7 @@ document.addEventListener('click', function(event) {
         // Nachricht in das Eingabefeld einfügen und senden
         const inputField = document.getElementById('chatbot-input');
         inputField.value = message; // Nachricht ins Feld einfügen
+        deleteLink();
         sendMessage(); // Vorhandene Sende-Funktion aufrufen
     }
 });
